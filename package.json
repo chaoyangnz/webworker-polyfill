@@ -1,0 +1,43 @@
+{
+  "name": "webworker-polyfill",
+  "version": "0.1.0",
+  "description": "Polyfills for web worker's missing objects: localStorage, indexedDB etc",
+  "main": "lib/library.js",
+  "scripts": {
+    "build": "webpack --env dev && webpack --env build && npm run test",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha --require babel-core/register --colors ./test/*.spec.js",
+    "test:watch": "mocha --require babel-core/register --colors -w ./test/*.spec.js",
+    "example": "webpack --progress --colors --watch --config ./webpack.example.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richdyang/webworker-polyfill.git"
+  },
+  "keywords": [
+    "webworker",
+    "localStorage"
+  ],
+  "author": "Chao Yang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richdyang/webworker-polyfill/issues"
+  },
+  "homepage": "https://github.com/richdyang/webworker-polyfill",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.16.0",
+    "eslint-loader": "^1.9.0",
+    "mocha": "^5.0.0",
+    "webpack": "^3.10.0",
+    "worker-loader": "^1.1.0",
+    "yargs": "^11.0.0"
+  },
+  "dependencies": {}
+}

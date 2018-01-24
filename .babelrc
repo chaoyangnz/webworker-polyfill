@@ -1,0 +1,16 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "debug": true,
+        "targets": {
+          "browsers": ["last 2 Chrome versions"]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "add-module-exports"
+  ]
+}
